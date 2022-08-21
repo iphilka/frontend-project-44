@@ -29,9 +29,9 @@ export const gameLoop = (userName, gameLogic) => {
     return;
   }
   userScores += 1;
+  console.log('Correct!');
 
   if (userScores === scoresForWin) {
-    console.log('Correct!');
     console.log(`Congratulations, ${userName}!`);
     return;
   }
