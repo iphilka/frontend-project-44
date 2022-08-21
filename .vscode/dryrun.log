@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/iphilka/VisualStudioReps/frontend-project-44'
+npm ci
+make: Leaving directory '/home/iphilka/VisualStudioReps/frontend-project-44'
+ 
