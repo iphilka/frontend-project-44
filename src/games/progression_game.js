@@ -9,6 +9,8 @@ const getProgression = (firstNumber, step) => {
   return progression;
 };
 
+const gameDescription = 'What number is missing in the progression?';
+
 const gameLauncher = createNewGame(() => {
   const firstNumber = randomInteger(0, 50);
   const step = randomInteger(2, 8);
@@ -18,9 +20,9 @@ const gameLauncher = createNewGame(() => {
   progression[randomIndex] = '..';
   const gameNumber = progression.join(' ');
 
-  const userAnswer = askQuestion(`What number is missing in the progression?\nQuestion: ${gameNumber}`);
+  const userAnswer = askQuestion(`Question: ${gameNumber}`);
 
   return [userAnswer, calculateAnswer];
-});
+}, gameDescription);
 
 export default gameLauncher;

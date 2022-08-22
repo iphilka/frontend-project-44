@@ -38,7 +38,8 @@ export const gameLoop = (userName, gameLogic) => {
   gameLoop(userName, gameLogic);
 };
 
-export const createNewGame = (gameLogic) => () => {
+export const createNewGame = (gameLogic, gameDescription) => () => {
   const name = welcomeUser();
+  console.log(gameDescription);
   gameLoop(name, gameLogic);
 };
