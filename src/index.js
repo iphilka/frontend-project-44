@@ -43,3 +43,5 @@ export const createNewGame = (gameLogic, gameDescription) => () => {
   console.log(gameDescription);
   gameLoop(name, gameLogic);
 };
+
+export default welcomeUser;
