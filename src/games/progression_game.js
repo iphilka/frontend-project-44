@@ -4,7 +4,7 @@ const getProgression = (firstNumber, step) => {
   const progressionLength = randomInteger(6, 15);
   const progression = [];
   for (let i = 0; i < progressionLength; i += 1) {
-    progression.push(firstNumber + step * 1);
+    progression.push(firstNumber + step * i);
   }
   return progression;
 };
