@@ -21,10 +21,10 @@ let userScores = 0;
 const scoresForWin = 3;
 
 export const gameLoop = (userName, gameLogic) => {
-  const [userAnswer, calculateAnswer] = gameLogic();
+  const [userAnswer, correctAnswer] = gameLogic();
 
-  if (String(userAnswer) !== String(calculateAnswer)) {
-    console.log(`'${userAnswer}'is wrong answer ;(. Correct answer was ${calculateAnswer}`);
+  if (String(userAnswer) !== String(correctAnswer)) {
+    console.log(`'${userAnswer}'is wrong answer ;(. Correct answer was ${correctAnswer}`);
     console.log(`Let's try again, ${userName}!`);
     return;
   }
@@ -43,5 +43,3 @@ export const createNewGame = (gameLogic, gameDescription) => () => {
   console.log(gameDescription);
   gameLoop(name, gameLogic);
 };
-
-export default welcomeUser;
